@@ -35,7 +35,7 @@ const EventForm = ({ onAddEvent }) => {
       className="event-form"
       onSubmit={handleSubmit}
     >
-      <h2>Add New Event</h2>
+     
       <input
         type="text"
         name="title"

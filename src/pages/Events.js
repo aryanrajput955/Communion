@@ -109,6 +109,20 @@ const Events = () => {
         </motion.section>
       )}
 
+
+
+      {/* Add Event Form */}
+      <motion.section
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        className="add-event-section"
+      >
+        <h2>Add a New Event</h2>
+        <EventForm onAddEvent={addEvent} />
+      </motion.section>
+
+
       {/* Filter Section */}
       <motion.section
         initial={{ opacity: 0 }}
@@ -129,18 +143,6 @@ const Events = () => {
           ))}
         </div>
       </motion.section>
-
-      {/* Add Event Form */}
-      <motion.section
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 1 }}
-        className="add-event-section"
-      >
-        <h2>Add a New Event</h2>
-        <EventForm onAddEvent={addEvent} />
-      </motion.section>
-
       {/* Event Listing */}
       <motion.section
         initial={{ opacity: 0 }}
